@@ -1,0 +1,81 @@
+# 📚 E-commerce Bookstore
+
+An online bookstore web application where users can register, log in, view books, add them to cart, and place orders — built using **React** for the frontend and **Flask + PostgreSQL** for the backend.
+
+---
+
+## 🚀 Features
+
+- 👤 User Registration
+- 🔐 Secure Login Handling
+- 📖 View All Available Books
+- 🛒 Add Books to Cart
+- 💳 Checkout & Place Orders
+- 🗃️ PostgreSQL for all data storage
+- 🔄 React frontend + Flask API backend
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer        | Tech Used        |
+|--------------|------------------|
+| Frontend     | React.js         |
+| Backend      | Flask (Python)   |
+| Database     | PostgreSQL       |
+| Styling      | CSS              |
+| API Bridge   | Flask-CORS       |
+
+---
+
+## 📁 Folder Structure
+
+
+EcommerceBookstore/
+├── client/ # React Frontend
+│ ├── public/
+│ └── src/
+│ └── index.js # Entry point for React app
+├── server/ # Flask Backend
+│ ├── app.py # Main API routes
+│ ├── requirements.txt # Backend dependencies
+│ └── schema.sql # SQL to create required tables
+
+yaml
+Copy code
+
+---
+
+## ⚙️ Setup Instructions
+
+### 🧩 1. Backend (Flask API)
+
+#### Step 1: Install dependencies
+```bash
+pip install -r server/requirements.txt
+Step 2: Set up PostgreSQL
+Make sure PostgreSQL is installed and running. Then create a database:
+
+sql
+Copy code
+CREATE DATABASE bookstore;
+Step 3: Run the schema
+bash
+Copy code
+psql -U postgres -d bookstore -f server/schema.sql
+Step 4: Start the Flask server
+bash
+Copy code
+cd server
+python app.py
+💻 2. Frontend (React)
+Step 1: Install dependencies
+bash
+Copy code
+cd client
+npm install
+Step 2: Start the React app
+bash
+Copy code
+npm start
+The app should now open in your browser at http://localhost:3000.
